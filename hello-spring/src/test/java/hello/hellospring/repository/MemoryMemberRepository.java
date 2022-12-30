@@ -1,4 +1,4 @@
-package com.example.hellospring.repository;
+package hello.hellospring.repository;
 
 import com.example.hellospring.domain.Member;
 
@@ -37,4 +37,9 @@ public class MemoryMemberRepository implements MemberRepository {
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
     }
+
+    public void clearStore() {
+        store.clear();
+    }
+
 }
