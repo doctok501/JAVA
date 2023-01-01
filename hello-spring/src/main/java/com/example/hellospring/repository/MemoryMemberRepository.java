@@ -1,9 +1,10 @@
-package hello.hellospring.repository;
+package com.example.hellospring.repository;
 
 import com.example.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
-
+//@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
@@ -13,7 +14,7 @@ public class MemoryMemberRepository implements MemberRepository {
     @Override
     public Member save(Member member) {
         // sequence 증가로 Id값 설정
-        // 원래는 시스템이 값을 설정하나, 여기서는 우리가 할
+        // 원래는 시스템이 값을 설정하나, 여기서는 우리가 함
         member.setId(++sequence);
         // map에 저장
         store.put(member.getId(), member);
