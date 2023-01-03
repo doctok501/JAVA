@@ -1,7 +1,7 @@
 # JAVA
 
 
-#### 1. mustache server template 이용하기.
+#### 1. mustache server template 이용해보기.(thymeleaf템플릿 엔진을 더 많이 사용)
 
 #### 2. Terminal에서 Spring 실행- java -jar (파일이름) 
 #### -> 배포 진행시 위 방법 이용하여 배포
