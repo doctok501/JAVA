@@ -32,6 +32,8 @@ public class JdbcTemplateMemberRepository implements MemberRepository {
                 MapSqlParameterSource(parameters));
         member.setId(key.longValue());
 
+
+        
         return member;
     }
 
