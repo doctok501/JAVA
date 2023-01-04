@@ -5,6 +5,7 @@
 
 #### 2. Terminal에서 Spring 실행- java -jar (파일이름) 
 #### -> 배포 진행시 위 방법 이용하여 배포
+#### ex - [java -jar jpashop-0.0.1-SNAPSHOT.jar]
 
 #### 3. MVC 이용(Model, View, Controller) - 기본적으로 컨트롤러와 뷰를 쪼개서 작동시킨다.
 #### 이때, @ResponseBody를 이용하여 http body에 데이터를 직접 표출시킨다.(실무에서 사용하는 방식)
