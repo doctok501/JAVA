@@ -29,7 +29,7 @@ public class Order {
     @JoinColumn(name = "delivery_id")
     private Delivery delivery;
 
-    //주문 시간
+    //주문 시간 order_date
     private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING)
