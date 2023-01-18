@@ -69,7 +69,19 @@ class OrderServiceTest {
         assertEquals(ex.getMessage(),"need more stock");
     }
 
-    
+    @Test
+    public void 주문취소() throws Exception {
+    //given
+    Member member = createMember();
+        createBook("시골 JPA", 10000, 10);
+
+        int orderCount = 2;
+
+    //when
+
+
+    //then
+    }
 
 
 
