@@ -76,11 +76,18 @@ class OrderServiceTest {
         createBook("시골 JPA", 10000, 10);
 
         int orderCount = 2;
+        //추후에 고치기*
+        Long orderId = orderService.order(member.getId(), member.getId(), orderCount );
 
     //when
+        orderService.cancelOrder(orderId);
 
 
     //then
+        Order getOrder = orderRepository.findOne(orderId);
+
+        assertEquals(OrderStatus.ORDER, getOrder.getStatus(), "주문 취소시 상태는 CANCEL 이다.");
+
     }
 
 
