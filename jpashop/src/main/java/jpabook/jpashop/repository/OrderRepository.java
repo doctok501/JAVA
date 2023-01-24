@@ -56,6 +56,9 @@ public class OrderRepository {
         //최대 1000건
         return query.getResultList();
     }
+    public List<Order> findAll(OrderSearch orderSearch) { //... 검색 로직
+        return em.createQuery("select o from Order o", Order.class).getResultList();
+    }
 
 
 }
