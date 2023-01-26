@@ -12,6 +12,7 @@ public class MemberForm {
 
     //Not empty annotation 찾아보기
     @Nonnull
+    
     private String name;
     private String city;
     private String street;
