@@ -1,9 +1,10 @@
 package hufsgdsc.EduWithU.config.auth;
 
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Configuration;
 
 @RequiredArgsConstructor
-@Getter
-public class SecurityConfig {
+@Configuration
+public class WebConfig {
+
 }
